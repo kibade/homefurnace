@@ -4,6 +4,6 @@ from . import views
 
 #URL CONF
 urlpatterns = [
-    path('hello/', views.say_hello)
+    path('hello/', views.get_temp)
 ]
 
