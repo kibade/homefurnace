@@ -2,7 +2,26 @@
 <html><body style="background-color:black;">
 <font size="80">
 <font color="#E0FFFF">
-Current Temperature of the Furnace, {{ thermocouple }} C
+<h1>Current Temperature of the Furnace, {{ thermocouple }} C </h1>
+<h1> Cat arm position = {{ cat_arm_value }} </h1>
+</font>
+{% if thermocouple > 10 %}
+<font color="#FF3333">
+<h1> Temp to high!!</h1>
+</font>
+{% else %}
+<font color="#E0FFFF">
+<h1> Temp is OK </h1>
+</font>
+{% endif %}
+{% if cat_arm_value > 0 %}
+<font color="#FF3333">
+<h1> Cat is not engaged </h1>
+</font>
+{% else %}
+<font color="#E0FFFF">
+<h1> Cat is engaged </h1>
+</font>
+{% endif %}
 </font>
 </body>
-
