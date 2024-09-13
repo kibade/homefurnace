@@ -14,7 +14,9 @@ def get_temp (request):
     data_pin = 22
     units = "c"
     thermocouple = MAX31855(cs_pin, clock_pin, data_pin, units)
+    temp = thermocouple.get() 
     thermocouple.cleanup()
 #Get cat arm posistion info
     cat_arm_value = get_arm_position()
-    return render(request, 'main.html', {'thermocouple': thermocouple,'cat_arm_value': cat_arm_value })
+#    cat_arm_value = 0
+    return render(request, 'main.html', {'temp': temp,'cat_arm_value': cat_arm_value })
