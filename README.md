@@ -11,7 +11,7 @@ Phase 1 "show furnace temp"
 Phase 2 Read new Cat engage arm
 1) Read new switch on off Value
 
-Phase 3 Show graph iwth curent and historic temps
+Phase 3 Show graph switch curent and historic temps
 1) Display the temp on a graph.
     a) Read temp
     b) Save to a database
