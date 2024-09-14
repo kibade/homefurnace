@@ -7,7 +7,11 @@ Phase 1 "show furnace temp"
 2) Display it on a webpage.
 3) Repeat every 5 seconds.
 
-Phase 2 Show graph iwth curent and historic temps
+
+Phase 2 Read new Cat engage arm
+1) Read new switch on off Value
+
+Phase 3 Show graph iwth curent and historic temps
 1) Display the temp on a graph.
     a) Read temp
     b) Save to a database
