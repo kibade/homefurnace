@@ -5,9 +5,15 @@ import random
 from max31855 import MAX31855, MAX31855Error
 from read_input import get_arm_position
 from read_temp import read_temp
+from .models import Temperture_Data
 
 # Create your views here.
 def get_temp (request): 
     temp = read_temp() #reads thremocouple temp from Max31855
+    # Save new recording to the database Temperture_Data
+    recorded_temp = Temperture_Data()
+    Temperture_Data.temperture = temp
+    Temperture_Data.save()
+    ################
     cat_arm_value = get_arm_position()  #reading arm position
     return render(request, 'main.html', {'temp': temp,'cat_arm_value': cat_arm_value })
