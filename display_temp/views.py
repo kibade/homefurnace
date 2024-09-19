@@ -12,7 +12,7 @@ def get_temp (request):
     temp = read_temp() #reads thremocouple temp from Max31855
     # Save new recording to the database Temperture_Data
     recorded_temp = Temperture_Data()
-    Temperture_Data.temperture = temp
+    recorded_temp.temperture = temp
     Temperture_Data.save()
     ################
     cat_arm_value = get_arm_position()  #reading arm position
