@@ -4,7 +4,7 @@ from django.db import models
 class Temperture_Data(models.Model):
     #Database for storing date and temperture
     date = models.DateTimeField(auto_now_add=True)
-    temperture =models.IntegerField()
+    temperture =models.FloatField()
     
     
     
