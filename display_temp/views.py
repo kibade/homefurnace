@@ -8,18 +8,6 @@ from read_temp import read_temp
 
 # Create your views here.
 def get_temp (request): 
-#####################################
-#Gets values to display on main page
-#####################################
-#    cs_pin = 24 #MAX is using BOARD = pin numbers not BCM
-#    clock_pin = 23
-#    data_pin = 22
-#    units = "c"
-#    thermocouple = MAX31855(cs_pin, clock_pin, data_pin, units)
-#    temp = thermocouple.get() 
-#    thermocouple.cleanup()
-#Get cat arm posistion info
-    temp = read_temp()
-    cat_arm_value = get_arm_position()
-#    cat_arm_value = 0
+    temp = read_temp() #reads thremocouple temp from Max31855
+    cat_arm_value = get_arm_position()  #reading arm position
     return render(request, 'main.html', {'temp': temp,'cat_arm_value': cat_arm_value })
