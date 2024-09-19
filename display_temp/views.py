@@ -13,7 +13,7 @@ def get_temp (request):
     # Save new recording to the database Temperture_Data
     recorded_temp = Temperture_Data()
     recorded_temp.temperture = temp
-    Temperture_Data.save()
+    recorded_temp.save()
     ################
     cat_arm_value = get_arm_position()  #reading arm position
     return render(request, 'main.html', {'temp': temp,'cat_arm_value': cat_arm_value })
