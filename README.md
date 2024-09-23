@@ -16,7 +16,7 @@ Phase 3 Combine arm postion info with temp to warn of over temp
 2) Read temp
 3) Warn on screen if temp is too high in arm not engaged.
 4) Play sound
-
+Minimum required to safetly operate the furnace
 ### completed ###
 
 Phase 4 Show graph of temps and arm position
