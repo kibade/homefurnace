@@ -11,19 +11,19 @@ Phase 1 "show furnace temp"
 Phase 2 Read new Cat engage arm
 1) Read new switch on off Value
 
-Phase 3 Show graph switch curent and historic temps
+Phase 3 Combine arm postion info with temp to warn of over temp
+1) Read arm postion
+2) Read temp
+3) Warn on screen if temp is too high in arm not engaged.
+4) Play sound
+
+### completed ###
+
+Phase 4 Show graph of temps and arm position
 1) Display the temp on a graph.
     a) Read temp
     b) Save to a database
     c) Use the data base to show a graph of temp over time
-
-Phase 3 Read new Cat engage arm
-1) Read new switch on off Value
-
-Phase 4 Combine arm postion info with temp to warn of over temp
-1) Read arm postion
-2) Read temp
-3) Warn on screen if temp is too high in arm not engaged.
 
 Phase 5 Add text message/email off temp over temp
 1) Read warning error
