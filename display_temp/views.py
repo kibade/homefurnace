@@ -10,7 +10,6 @@ from .models import Temperture_Data
 # Create your views here.
 def get_temp (request): 
     temp = read_temp() #reads thremocouple temp from Max31855
-
     # Save new recording to the database Temperture_Data
 #    recorded_temp = Temperture_Data()
 #    recorded_temp.temperture = temp
