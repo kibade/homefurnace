@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('display_temp/', include('display_temp.urls'))
+# root url will take you to the display_temp website
+    path('', include('display_temp.urls'))
 ]

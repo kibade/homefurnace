@@ -17,4 +17,4 @@ def get_temp (request):
     cat_arm_value = get_arm_position()  #reading arm position
 #    recorded_temp.arm = cat_arm_value
 #    recorded_temp.save()
-    return render(request, 'main.html', {'temp': temp,'cat_arm_value': cat_arm_value })
+    return render(request, 'main.html', {'temp': temp,'cat_arm_value': cat_arm_value }) #Displays on webpage
