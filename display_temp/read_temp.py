@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from max31855 import MAX31855, MAX31855Error
+from display_temp.max31855 import MAX31855, MAX31855Error
 
 def read_temp (): 
 #####################################
