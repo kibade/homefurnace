@@ -4,8 +4,8 @@ from django.http import HttpResponse
 import random
 from max31855 import MAX31855, MAX31855Error
 from read_input import get_arm_position
-from read_temp import read_temp
-from .models import Temperture_Data
+from display_temp.read_temp import read_temp
+#from .models import Temperture_Data
 
 # Create your views here.
 def get_temp (request): 
