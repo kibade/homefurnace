@@ -24,12 +24,12 @@
 <h2>
   {% if cat_arm_value > 0 %}
     <font color="#FF3333">
-    <br><br> Cat is not engaged
+    <br> Cat is not engaged
     <!-- </font> -->
     {% if temp > 400 %}
       <font color="#FF3333">
       <!-- <font size="10"> -->
-      <br><br>Temp to high!!
+      <br>Temp to high!!
       <!-- </font> -->
       <audio autoplay>
           <source src="{% static 'red-alert-short.wav' %}" type="audio/mpeg">
@@ -40,12 +40,12 @@
   {% else %}
     <font color="#E0FFFF">
     <!-- <font size="8"> -->
-    <br><br> Cat is engaged
+    <br> Cat is engaged
     </font>
     {% if temp > 760 %}
       <font color="#FF3333">
       <!-- <font size="10"> -->
-      <br><br>Temp to high!!
+      <br>Temp to high!!
       </font>
       <audio controls autoplay>
           <source src="{% static 'red-alert-short.wav' %}" type="audio/mpeg">
