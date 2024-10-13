@@ -11,5 +11,6 @@ def read_temp ():
     units = "c"
     thermocouple = MAX31855(cs_pin, clock_pin, data_pin, units)
     temp = thermocouple.get() 
+    temp = 900
     thermocouple.cleanup()
     return(temp)
