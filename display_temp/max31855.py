@@ -38,7 +38,7 @@ class MAX31855(object):
     def get(self):
         '''Reads SPI bus and returns current value of thermocouple.'''
         self.read()
-        self.checkErrors()
+#        self.checkErrors() ''' Removed because it was stopping the webpage from refreshing '''
         return getattr(self, "to_" + self.units)(self.data_to_tc_temperature())
 
     def get_rj(self):

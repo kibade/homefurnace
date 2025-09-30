@@ -5,7 +5,7 @@ import random
 from display_temp.max31855 import MAX31855, MAX31855Error
 from display_temp.read_input import get_arm_position
 from display_temp.read_temp import read_temp
-
+import time
 
 # Create your views here.
 def get_temp (request): 
