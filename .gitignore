@@ -1,0 +1,3 @@
+# But track Django app static files
+!display_temp/static/
+!display_temp/static/**
